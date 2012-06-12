@@ -1,4 +1,8 @@
 JasmineCoffee::Application.routes.draw do
+  resources :guitars
+
+  root to: 'guitars#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
