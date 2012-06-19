@@ -3,6 +3,7 @@ class CreateGuitars < ActiveRecord::Migration
     create_table :guitars do |t|
       t.string :brand
       t.string :year
+      t.string :title
 
       t.timestamps
     end

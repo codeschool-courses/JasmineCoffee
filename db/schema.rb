@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(:version => 20120612211819) do
   create_table "guitars", :force => true do |t|
     t.string   "brand"
     t.string   "year"
+    t.string   "title"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
