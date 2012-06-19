@@ -15,10 +15,23 @@
     <%= f.label :brand %><br />
     <%= f.text_field :brand %>
   </div>
+
   <div class="field">
     <%= f.label :year %><br />
     <%= f.text_field :year %>
+
+    <span class="guitar-age">
+      Your guitar is <span id="age"></span> year(s) old
+    </div>
+
   </div>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
