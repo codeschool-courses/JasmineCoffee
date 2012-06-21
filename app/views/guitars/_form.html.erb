@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= f.label :brand %><br />
-    <%= f.text_field :brand %>
+    <%= f.text_field :brand, autocomplete: 'off' %>
   </div>
 
   <div class="field">
     <%= f.label :year %><br />
-    <%= f.text_field :year %>
+    <%= f.text_field :year, autocomplete: 'off' %>
 
     <span class="guitar-age">
       Your guitar is <span id="age"></span> year(s) old
