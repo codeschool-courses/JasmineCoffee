@@ -14,6 +14,6 @@ suggestTitle = ->
 suggestAge = ->
   year = $('#guitar_year').val()
   age = Guitars.suggestAge(year)
-  $('.guitar-age').show().
-    find('#age').text(age)
-
+  guitarSpan = $('.guitar-age')
+  guitarSpan.find('#age').text(age)
+  guitarSpan.show()
