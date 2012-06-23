@@ -34,4 +34,4 @@ describe 'Guitars', ->
     it 'returns year from Date', ->
       spyOn(Date.prototype, 'getFullYear').andReturn(2012)
       currentYear = Guitars.currentYear()
-      expect(currentYear).toEqual((new Date().getFullYear()))
+      expect(currentYear).toEqual(2012)
