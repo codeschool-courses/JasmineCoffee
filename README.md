@@ -2,12 +2,6 @@
 
 The client-side of your application deserves some tests too. In this episode we'll look at how to use the Jasmine testing framework with CoffeeScript inside of Rails. http://www.codeschool.com/code_tv/testing-coffeescript-with-jasmine
 
-## Setup and Tests
-
-In order to setup the app locally, first run `bundle` to install dependencies.
-Then, run `bundle exec rake db:create db:migrate db:test:prepare` to setup you database.
-To run the test suite including Jasmine specs, run `bundle exec rake`.
-
 ## Notes
 
 gemfile add
@@ -55,6 +49,12 @@ Add to spec/javascript/demp_spec.coffee
     myApp.Calculator = {
       add: (a,b) -> a + b
     }
+
+## Setup guitar app and Tests
+
+In order to setup the app locally, first run `bundle` to install dependencies.
+Then, run `bundle exec rake db:create db:migrate db:test:prepare` to setup you database.
+To run the test suite including Jasmine specs, run `bundle exec rake`.
 
 Setup guitar app
 
