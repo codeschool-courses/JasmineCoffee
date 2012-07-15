@@ -25,27 +25,36 @@ run bundle to install
 
 Run JavaScript specs via Evergreen
 
-    $ rake spec:javascript
+    $ rake spec:javascripts
+
+Create folder for tests
 
     $ mkdir -p spec/javascripts
-
-    $ touch spec/javascript/demp_spec.coffee
+    $ touch spec/javascript/demo_spec.coffee
+    
+Add this to demo_spec.coffee
 
     describe 'A Calculator', ->
-      it 'should add two numbers', =?
+      it 'should add two numbers', ->
       result = myApp.Calculator.add(2,3)
       expect(result).toEqual(5)
+      
+Run test again
 
-    $ rake spec:javascript
+    $ rake spec:javascripts
+    
+Start evergreen server
 
     $ evergreen serve
  
-add to spec/javascript/demp_spec.coffee
+Add to spec/javascript/demp_spec.coffee
 
     myApp = {}
       myApp.Calculator = {
         add: (a,b) -> a + b
       }
+
+Setup guitar app
 
     $ ls app/models.
 
