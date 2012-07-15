@@ -21,6 +21,8 @@ run bundle to install
 
     $ bundle
 
+see new evergreen rake command
+
     $ rake -T spec
 
 Run JavaScript specs via Evergreen
