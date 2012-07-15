@@ -12,45 +12,45 @@ To run the test suite including Jasmine specs, run `bundle exec rake`.
 
 gemfile add
 
-group :development, :test do
-  gem 'everreen', require:'evergreen/rails'
-end
+    group :development, :test do
+      gem 'everreen', require:'evergreen/rails'
+    end
 
 
 run bundle to install
 
-$ bundle
+    $ bundle
 
-$ rake -T spec
+    $ rake -T spec
 
 Run JavaScript specs via Evergreen
 
-$ rake spec:javascript
+    $ rake spec:javascript
 
-$ mkdir -p spec/javascripts
+    $ mkdir -p spec/javascripts
 
-$ touch spec/javascript/demp_spec.coffee
+    $ touch spec/javascript/demp_spec.coffee
 
-describe 'A Calculator', ->
-	it 'should add two numbers', =?
-		result = myApp.Calculator.add(2,3)
-		expect(result).toEqual(5)
+    describe 'A Calculator', ->
+      it 'should add two numbers', =?
+      result = myApp.Calculator.add(2,3)
+      expect(result).toEqual(5)
 
-$ rake spec:javascript
+    $ rake spec:javascript
 
-$ evergreen serve
+    $ evergreen serve
  
 add to spec/javascript/demp_spec.coffee
 
-myApp = {}
-myApp.Calculator = {
-	add: (a,b) -> a + b
-}
+    myApp = {}
+      myApp.Calculator = {
+        add: (a,b) -> a + b
+      }
 
-$ ls app/models.
+    $ ls app/models.
 
-$ rm -F spec/javascripts/demo_spec.coffee
+    $ rm -F spec/javascripts/demo_spec.coffee
 
-$ touch spec/javascript/guitars_spec.coffee
+    $ touch spec/javascript/guitars_spec.coffee
 
 
