@@ -52,9 +52,9 @@ Start evergreen server
 Add to spec/javascript/demp_spec.coffee
 
     myApp = {}
-      myApp.Calculator = {
-        add: (a,b) -> a + b
-      }
+    myApp.Calculator = {
+      add: (a,b) -> a + b
+    }
 
 Setup guitar app
 
