@@ -7,7 +7,7 @@ The client-side of your application deserves some tests too. In this episode we'
 gemfile add
 
     group :development, :test do
-      gem 'everreen', require:'evergreen/rails'
+      gem 'evergreen', require:'evergreen/rails'
     end
 
 
@@ -27,23 +27,23 @@ Create folder for tests
 
     $ mkdir -p spec/javascripts
     $ touch spec/javascript/demo_spec.coffee
-    
+
 Add this to demo_spec.coffee
 
     describe 'A Calculator', ->
       it 'should add two numbers', ->
       result = myApp.Calculator.add(2,3)
       expect(result).toEqual(5)
-      
+
 Run test again
 
     $ rake spec:javascripts
-    
+
 Start evergreen server
 
     $ evergreen serve
- 
-Add to spec/javascript/demp_spec.coffee
+
+Add to spec/javascript/demo_spec.coffee
 
     myApp = {}
     myApp.Calculator = {
