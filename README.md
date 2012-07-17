@@ -26,7 +26,7 @@ Run JavaScript specs via Evergreen
 Create folder for tests
 
     $ mkdir -p spec/javascripts
-    $ touch spec/javascript/demo_spec.coffee
+    $ touch spec/javascripts/demo_spec.coffee
 
 Add this to demo_spec.coffee
 
@@ -43,7 +43,7 @@ Start evergreen server
 
     $ evergreen serve
 
-Add to spec/javascript/demo_spec.coffee
+Add to spec/javascripts/demo_spec.coffee
 
     myApp = {}
     myApp.Calculator = {
